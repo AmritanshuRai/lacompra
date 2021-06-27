@@ -1,0 +1,94 @@
+.modal {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 12;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    max-width: 320px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    margin: 0 auto;
+    background-color: var(--neutral-200);
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 567px) {
+      max-width: 90%;
+    }
+  }
+  &__title {
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--neutral-700);
+    margin: 2rem auto;
+  }
+  &__close {
+    position: absolute;
+    right: 4px;
+    top: 8px;
+    cursor: pointer;
+    color: var(--neutral-500);
+    text-transform: uppercase;
+    font-size: var(--paragraph);
+    letter-spacing: 0.5px;
+    svg {
+      font-size: 2rem;
+    }
+  }
+  &__error {
+    text-align: center;
+    color: var(--error);
+    letter-spacing: 1px;
+    height: 12px;
+  }
+  .login-page {
+    margin: auto;
+    width: 90%;
+  }
+  .form {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .form input {
+    outline: 0;
+    background: var(--neutral-100);
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: var(--neutral-500);
+    width: 60%;
+    border: 0;
+    padding: 12px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,
+  .form button:active,
+  .form button:focus {
+    background: var(--neutral-800);
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: var(--neutral-600);
+    text-decoration: none;
+  }
+}

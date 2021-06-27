@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container > div {
+  padding-top: 10px;
+}
+.paginate-ctn {
+  display: flex;
+}
+.round-effect {
+  color: var(--neutral-500);
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-decoration: none;
+}
+
+.round-effect:hover {
+  text-decoration: none;
+  background: var(--neutral-300);
+  color: #fff;
+}
+
+.active {
+  background: var(--neutral-500);
+  color: #fff;
+}

@@ -1,0 +1,33 @@
+footer {
+  min-height: 5vh;
+  display: flex;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    div {
+      display: flex;
+      width: 70%;
+      justify-content: flex-end;
+      align-items: center;
+      @media (max-width: 568px) {
+        width: auto;
+      }
+    }
+    span {
+      margin: 4px;
+    }
+    a {
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 568px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
